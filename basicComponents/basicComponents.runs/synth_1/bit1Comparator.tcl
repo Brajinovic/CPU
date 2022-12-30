@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/VHDLProjects/basicComponents/basicComponents.runs/synth_1/bit1Comparator.tcl"
+  variable script "E:/CPU_VHDL/basicComponents/basicComponents.runs/synth_1/bit1Comparator.tcl"
   variable category "vivado_synth"
 }
 
@@ -76,16 +76,16 @@ create_project -in_memory -part xc7s100fgga676-2
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/VHDLProjects/basicComponents/basicComponents.cache/wt [current_project]
-set_property parent.project_path D:/VHDLProjects/basicComponents/basicComponents.xpr [current_project]
+set_property webtalk.parent_dir E:/CPU_VHDL/basicComponents/basicComponents.cache/wt [current_project]
+set_property parent.project_path E:/CPU_VHDL/basicComponents/basicComponents.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:sp701:part0:1.1 [current_project]
-set_property ip_output_repo d:/VHDLProjects/basicComponents/basicComponents.cache/ip [current_project]
+set_property ip_output_repo e:/CPU_VHDL/basicComponents/basicComponents.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib D:/VHDLProjects/basicComponents/basicComponents.srcs/sources_1/new/bit1Comparator.vhd
+read_vhdl -library xil_defaultlib E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/bit1Comparator.vhd
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -96,6 +96,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental E:/CPU_VHDL/basicComponents/basicComponents.srcs/utils_1/imports/synth_1/bit1Comparator.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

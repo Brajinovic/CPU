@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/VHDLProjects/basicComponents/basicComponents.runs/synth_1'
+HD_PWD='E:/CPU_VHDL/basicComponents/basicComponents.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
