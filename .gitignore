@@ -1,4 +1,4 @@
-basicComponents.cashe/
+basicComponents.cache/
 basicComponents.hw/
 basicComponents.ip_user_files
 basicComponents.runs
@@ -7,3 +7,4 @@ vivado.jou
 vivado.log
 vivado_11268.backup.jou
 vivado_11268.backup.log
+basicComponents.xpr
