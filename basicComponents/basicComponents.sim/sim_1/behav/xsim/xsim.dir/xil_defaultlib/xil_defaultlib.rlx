@@ -3,7 +3,9 @@
 Oct 14 2022
 05:20:55
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sim_1/new/dFlipFlop_tb.vhd,1672502340,vhdl,,,,dflipflop_tb,,,,,,,,
+E:/CPU_VHDL/basicComponents/basicComponents.srcs/sim_1/new/fullAdder_tb.vhd,1672503598,vhdl,,,,fulladder_tb,,,,,,,,
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sim_1/new/halfAdder_tb.vhd,1672439388,vhdl,,,,halfadder_tb,,,,,,,,
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/bit1Comparator.vhd,1671895794,vhdl,,,,bit1comparator,,,,,,,,
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/dFlipFlop.vhd,1672502929,vhdl,,,,dflipflop,,,,,,,,
+E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/fullAdder.vhd,1672503890,vhdl,,,,fulladder,,,,,,,,
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/halfAdder.vhd,1672437462,vhdl,,,,halfadder,,,,,,,,
