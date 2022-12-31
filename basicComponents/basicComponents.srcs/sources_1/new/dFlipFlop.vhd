@@ -41,15 +41,21 @@ end dFlipFlop;
 architecture Behavioral of dFlipFlop is
 
 begin
-    process(reset, cp)
+    process(reset, cp, en)
         begin
-        if(reset = '1')then
-            q <= '0';
-        elsif(cp'event and cp = '1')then
-            if(en = '1')then
+        if(en = '1')then
+            if(reset = '1')then
+                q <= '0';
+            elsif(cp'event and cp = '1')then
                 q <= d;
             end if;
+            
+        else
+            q <= '0';
+            
         end if;
+        
+            qn <= not d;
     end process;
 
 end Behavioral;

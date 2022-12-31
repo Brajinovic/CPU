@@ -1,4 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/halfAdder.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'halfAdder'
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/CPU_VHDL/basicComponents/basicComponents.srcs/sim_1/new/halfAdder_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'halfAdder_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/dFlipFlop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dFlipFlop'
