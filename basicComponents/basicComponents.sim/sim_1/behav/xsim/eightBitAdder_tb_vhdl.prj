@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../basicComponents.srcs/sources_1/new/halfAdder.vhd" \
+"../../../../basicComponents.srcs/sources_1/new/fullAdder.vhd" \
+"../../../../basicComponents.srcs/sources_1/new/eightBitAdder.vhd" \
+"../../../../basicComponents.srcs/sim_1/new/eightBitAdder_tb.vhd" \
+
+# Do not sort compile order
+nosort
