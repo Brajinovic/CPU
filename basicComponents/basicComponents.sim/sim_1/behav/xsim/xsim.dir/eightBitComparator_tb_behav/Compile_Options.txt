@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "eightBitComparator_tb_behav" "xil_defaultlib.eightBitComparator_tb" -log "elaborate.log" 

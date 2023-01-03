@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 12/24/2022 08:48:34 PM
+-- Create Date: 01/02/2023 05:49:24 PM
 -- Design Name: 
--- Module Name: twoBitComparator - Behavioral
+-- Module Name: eightBitSubtractor_tb - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,22 +31,24 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity twoBitComparator is
-  Port (
-    i0, i1: in std_logic_vector(1 downto 0);
-    eq: out std_logic
-   );
-end twoBitComparator;
+entity eightBitSubtractor_tb is
+--  Port ( );
+end eightBitSubtractor_tb;
 
-architecture Behavioral of twoBitComparator is
-    signal p0, p1, p2, p3: std_logic;
+architecture Behavioral of eightBitSubtractor_tb is
+    component eightBitSubtractor
+        port(
+            a, b: in std_logic_vector(7 downto 0) := "00000000";
+            r: out std_logic_vector(7 downto 0):= "00000000"
+        );
+     end component;
+     signal a, b, r: std_logic_vector(7 downto 0) := "00000000";
 begin
-    p0 <= ((not i0(1)) and (not i1(1))) and ((not i0(0)) and (not i1(0)));
-    p1 <= ((not i0(1)) and (not i1(1))) and (i0(0) and i1(0));
-    p2 <= (i0(1) and i1(1)) and ((not i0(0)) and (not i1(0)));
-    p3 <= (i0(1) and i1(1)) and (i0(0) and i1(0));
-    
-    eq <= p0 or p1 or p2 or p3;
-
-
+    s0: eightBitSubtractor port map(a => a, b => b, r => r);
+    stimulus:process
+    begin
+        a <= "11111110";
+        b <= "00000001";
+        wait for 10 ns;
+    end process;
 end Behavioral;

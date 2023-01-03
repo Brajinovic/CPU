@@ -33,10 +33,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity eightBitAdder is
   Port ( 
-    a, b: in std_logic_vector(7 downto 0);
+    a, b: in std_logic_vector(7 downto 0) :="00000000";
  
-    r: out std_logic_vector(7 downto 0);
-    cf: out std_logic
+    r: out std_logic_vector(7 downto 0) :="00000000";
+    cf: out std_logic := '0'
   );
 end eightBitAdder;
 
