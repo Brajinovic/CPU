@@ -2,16 +2,18 @@
 2020.2
 Oct 14 2022
 05:20:55
+E:/CPU_VHDL/basicComponents/basicComponents.srcs/sim_1/new/alu_tb.vhd,1672776582,vhdl,,,,alu_tb,,,,,,,,
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sim_1/new/dFlipFlop_tb.vhd,1672502340,vhdl,,,,dflipflop_tb,,,,,,,,
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sim_1/new/eightBitAdder_tb.vhd,1672676092,vhdl,,,,eightbitadder_tb,,,,,,,,
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sim_1/new/eightBitComparator_tb.vhd,1672765737,vhdl,,,,eightbitcomparator_tb,,,,,,,,
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sim_1/new/eightBitSubtractor_tb.vhd,1672763725,vhdl,,,,eightbitsubtractor_tb,,,,,,,,
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sim_1/new/fullAdder_tb.vhd,1672503598,vhdl,,,,fulladder_tb,,,,,,,,
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sim_1/new/halfAdder_tb.vhd,1672439388,vhdl,,,,halfadder_tb,,,,,,,,
+E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/alu.vhd,1672773789,vhdl,,,,alu,,,,,,,,
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/bit1Comparator.vhd,1671895794,vhdl,,,,bit1comparator,,,,,,,,
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/dFlipFlop.vhd,1672502929,vhdl,,,,dflipflop,,,,,,,,
-E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/eightBitAdder.vhd,1672677883,vhdl,E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/eightBitSubtractor.vhd,,,eightbitadder,,,,,,,,
-E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/eightBitComparator.vhd,1672765679,vhdl,,,,eightbitcomparator,,,,,,,,
-E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/eightBitSubtractor.vhd,1672763930,vhdl,,,,eightbitsubtractor,,,,,,,,
+E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/eightBitAdder.vhd,1672677883,vhdl,E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/alu.vhd;E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/eightBitSubtractor.vhd,,,eightbitadder,,,,,,,,
+E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/eightBitComparator.vhd,1672765679,vhdl,E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/alu.vhd,,,eightbitcomparator,,,,,,,,
+E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/eightBitSubtractor.vhd,1672763930,vhdl,E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/alu.vhd,,,eightbitsubtractor,,,,,,,,
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/fullAdder.vhd,1672503890,vhdl,E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/eightBitAdder.vhd,,,fulladder,,,,,,,,
 E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/halfAdder.vhd,1672437462,vhdl,E:/CPU_VHDL/basicComponents/basicComponents.srcs/sources_1/new/eightBitAdder.vhd,,,halfadder,,,,,,,,
