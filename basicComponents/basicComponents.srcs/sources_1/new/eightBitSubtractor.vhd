@@ -44,8 +44,9 @@ architecture Behavioral of eightBitSubtractor is
     signal one: std_logic_vector(7 downto 0) := "00000001";
     signal cf, cf2: std_logic;
 begin
+    one <= "00000001";
     firstComplement <= b xor "11111111";
     s0: entity work.eightBitAdder port map(a => firstComplement, b => one, r => secondComplement, cf => cf);
-    s1: entity work.eightBitAdder port map(a => a, b => firstComplement, r => r, cf => cf2);
+    s1: entity work.eightBitAdder port map(a => a, b => secondComplement, r => r, cf => cf2);
 
 end Behavioral;

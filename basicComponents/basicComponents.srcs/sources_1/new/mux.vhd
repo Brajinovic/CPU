@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 01/03/2023 07:51:08 PM
+-- Create Date: 01/06/2023 10:33:26 PM
 -- Design Name: 
--- Module Name: alu - Behavioral
+-- Module Name: mux - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,22 +31,19 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity alu is
-  Port ( 
-    a, b: in std_logic_vector(7 downto 0);
+entity mux is
+  Port (
+    a, b, c: in std_logic_vector(7 downto 0);
     sel: in std_logic_vector(1 downto 0);
-    r: out std_logic_vector(7 downto 0);
-    cf: out std_logic
-  );
-end alu;
+    r: out std_logic_vector(7 downto 0)
+   );
+end mux;
 
-architecture Behavioral of alu is
-    signal addition, subtraction, comparison: std_logic_vector(7 downto 0);
+architecture Behavioral of mux is
+
 begin
-    s0: entity work.eightBitAdder port map(a => a, b => b, r => addition, cf => cf);
-    s1: entity work.eightBitSubtractor port map(a => a, b => b, r => subtraction);
-    s2: entity work.eightBitComparator port map(a => a, b => b, r => comparison);
+    r <= a when sel = "00" else
+         b when sel = "01" else
+         c;
 
-    sr: entity work.mux port map(a => addition, b => subtraction, c => comparison, sel => sel, r => r);
-    
 end Behavioral;

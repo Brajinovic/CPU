@@ -39,7 +39,7 @@ architecture Behavioral of eightBitSubtractor_tb is
     component eightBitSubtractor
         port(
             a, b: in std_logic_vector(7 downto 0) := "00000000";
-            r: out std_logic_vector(7 downto 0):= "00000000"
+            r: out std_logic_vector(7 downto 0)
         );
      end component;
      signal a, b, r: std_logic_vector(7 downto 0) := "00000000";
@@ -47,8 +47,8 @@ begin
     s0: eightBitSubtractor port map(a => a, b => b, r => r);
     stimulus:process
     begin
-        a <= "11111110";
-        b <= "00000001";
+        a <= "11111111";
+        b <= "11110000";
         wait for 10 ns;
     end process;
 end Behavioral;

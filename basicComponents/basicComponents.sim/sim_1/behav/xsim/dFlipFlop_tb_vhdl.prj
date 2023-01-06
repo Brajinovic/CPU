@@ -1,0 +1,21 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../basicComponents.srcs/sources_1/new/halfAdder.vhd" \
+"../../../../basicComponents.srcs/sources_1/new/fullAdder.vhd" \
+"../../../../basicComponents.srcs/sources_1/new/eightBitAdder.vhd" \
+"../../../../basicComponents.srcs/sources_1/new/eightBitSubtractor.vhd" \
+"../../../../basicComponents.srcs/sources_1/new/eightBitComparator.vhd" \
+"../../../../basicComponents.srcs/sources_1/new/alu.vhd" \
+"../../../../basicComponents.srcs/sources_1/new/bit1Comparator.vhd" \
+"../../../../basicComponents.srcs/sources_1/new/dFlipFlop.vhd" \
+"../../../../basicComponents.srcs/sources_1/new/mux.vhd" \
+"../../../../basicComponents.srcs/sim_1/new/alu_tb.vhd" \
+"../../../../basicComponents.srcs/sim_1/new/eightBitSubtractor_tb.vhd" \
+"../../../../basicComponents.srcs/sim_1/new/eightBitComparator_tb.vhd" \
+"../../../../basicComponents.srcs/sim_1/new/eightBitAdder_tb.vhd" \
+"../../../../basicComponents.srcs/sim_1/new/fullAdder_tb.vhd" \
+"../../../../basicComponents.srcs/sim_1/new/dFlipFlop_tb.vhd" \
+"../../../../basicComponents.srcs/sim_1/new/halfAdder_tb.vhd" \
+
+# Do not sort compile order
+nosort
