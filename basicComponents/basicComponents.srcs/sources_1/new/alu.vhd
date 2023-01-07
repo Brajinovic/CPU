@@ -46,7 +46,5 @@ begin
     s0: entity work.eightBitAdder port map(a => a, b => b, r => addition, cf => cf);
     s1: entity work.eightBitSubtractor port map(a => a, b => b, r => subtraction);
     s2: entity work.eightBitComparator port map(a => a, b => b, r => comparison);
-
-    sr: entity work.mux port map(a => addition, b => subtraction, c => comparison, sel => sel, r => r);
-    
+    s3: entity work.multiplexor port map(a => addition, b => subtraction, c => comparison, sel => sel, r => r);
 end Behavioral;

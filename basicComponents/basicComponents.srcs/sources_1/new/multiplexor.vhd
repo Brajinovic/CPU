@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 01/06/2023 10:33:26 PM
+-- Create Date: 01/07/2023 08:39:46 PM
 -- Design Name: 
--- Module Name: mux - Behavioral
+-- Module Name: multiplexor - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,15 +31,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity mux is
-  Port (
+entity multiplexor is
+  Port ( 
     a, b, c: in std_logic_vector(7 downto 0);
     sel: in std_logic_vector(1 downto 0);
     r: out std_logic_vector(7 downto 0)
-   );
-end mux;
+  );
+end multiplexor;
 
-architecture Behavioral of mux is
+architecture Behavioral of multiplexor is
 
 begin
     r <= a when sel = "00" else
